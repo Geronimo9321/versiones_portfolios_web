@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Fotógrafo</title>
+    <link rel="icon" type="image/png" href="image/photographer.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header">
+        <h1 class="logo">Mi Portfolio</h1>
+        <nav>
+            <ul class="nav">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#sobre">Sobre mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <h2>Capturando momentos únicos</h2>
+        <p>Fotografía profesional</p>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria" class="galeria">
+        <h2>Galería</h2>
+        <div class="grid">
+            <img src="image/Fotógrafia1.png" alt="Fotografía1">
+            <img src="image/Fotógrafia2.png" alt="Fotografía2">
+            <img src="image/Fotógrafia3.png" alt="Fotografía3">
+            <img src="image/Fotógrafia4.png" alt="Fotografía4">
+            <img src="image/Fotógrafia5.png" alt="Fotografía5">
+            <img src="image/Fotógrafia6.png" alt="Fotografía6">
+        </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobre" class="sobre">
+        <h2>Sobre mí</h2>
+        <p>Soy <strong>Juan Pérez</strong>, fotógrafo especializado en eventos, retratos y fotografía artística.</p>
+        <p>¿Tenes un evento y queres registrar tus mejores momentos? Escribime y lo hacemos realidad.</p>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <form id="form">
+            <input type="text" name="name"  placeholder="Nombre" required>
+            <input type="email"  name="email" placeholder="Email" required>
+            <textarea  name="message" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="status"></p>
+    </section>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        emailjs.init("TU_PUBLIC_KEY");
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

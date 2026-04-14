@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio Fotógrafo</title>
+
+	<meta name="description" content="Portfolio profesional de fotografía">
+	<link rel="icon" type="image/png" href="assets/photographer.png">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+	<h1 class="logo">Juan Pérez</h1>
+
+	<nav class="nav">
+		<a href="#inicio">Inicio</a>
+		<a href="#galeria">Galería</a>
+		<a href="#sobre">Sobre mí</a>
+		<a href="#contacto">Contacto</a>
+	</nav>
+
+	<div id="menu-toggle" class="menu-toggle">
+		<span></span><span></span><span></span>
+	</div>
+</header>
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+	<div class="overlay"></div>
+	<div class="hero-content">
+		<h2 class="fade-in">Capturando momentos únicos</h2>
+		<p class="fade-in delay">Fotografía profesional</p>
+		<a href="#galeria" class="btn fade-in delay-2">Ver trabajos</a>
+	</div>
+</section>
+
+<!-- GALERIA -->
+<section id="galeria" class="section hidden">
+	<h2>Galería</h2>
+
+	<div class="filtros">
+		<button class="filtro-btn active" data-filter="all">Todos</button>
+		<button class="filtro-btn" data-filter="eventos">Eventos</button>
+		<button class="filtro-btn" data-filter="retratos">Retratos</button>
+	</div>
+
+	<div class="carousel-container">
+		<button id="prev" class="btn">←</button>
+
+		<div id="carousel" class="carousel">
+			<img src="assets/img/Fotografia1.png" class="item eventos" alt="evento">
+			<img src="assets/img/Fotografia2.png" class="item retratos" alt="retrato">
+			<img src="assets/img/Fotografia3.png" class="item eventos" alt="evento">
+			<img src="assets/img/Fotografia4.png" class="item retratos" alt="retrato">
+			<img src="assets/img/Fotografia5.png" class="item eventos" alt="evento">
+			<img src="assets/img/Fotografia6.png" class="item retratos" alt="retrato">
+		</div>
+
+		<button id="next" class="btn">→</button>
+	</div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="section hidden">
+	<h2>Sobre mí</h2>
+	<p>Soy fotógrafo profesional especializado en eventos y retratos.</p>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="section hidden">
+	<h2>Contacto</h2>
+
+	<form id="form">
+		<input type="text" name="name" placeholder="Nombre" required>
+		<input type="email" name="email" placeholder="Email" required>
+		<textarea name="message" placeholder="Mensaje" required></textarea>
+		<button type="submit" class="btn">Enviar</button>
+	</form>
+
+	<p id="status"></p>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+	<span id="close">&times;</span>
+	<button id="prev-lightbox">←</button>
+	<img id="lightbox-img" alt="imagen ampliada">
+	<button id="next-lightbox">→</button>
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

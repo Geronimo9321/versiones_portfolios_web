@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mi Portfolio</title>
+
+	<style>
+		/* RESET */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial, sans-serif;
+			background: linear-gradient(135deg, #111, #1f1f1f);
+			color: #fff;
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 2.5rem;
+			margin-bottom: 10px;
+		}
+
+		p {
+			color: #aaa;
+			margin-bottom: 40px;
+		}
+
+		.container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 20px;
+			width: 90%;
+			max-width: 900px;
+		}
+
+		.card {
+			background: #1a1a1a;
+			padding: 25px;
+			border-radius: 15px;
+			box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+
+		.card:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+		}
+
+		.card h2 {
+			margin-bottom: 10px;
+		}
+
+		.card p {
+			font-size: 0.9rem;
+			margin-bottom: 20px;
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 10px 20px;
+			background: #ff4d4d;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 8px;
+			transition: background 0.3s;
+		}
+
+		.btn:hover {
+			background: #ff1a1a;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1>Mi Portfolio Fotográfico</h1>
+	<p>Explorá las diferentes versiones y encontrá el portfolio ideal para destacar tu trabajo y atraer más clientes.</p>
+
+	<div class="container">
+
+		<div class="card">
+			<h2>Versión Estándar</h2>
+			<p>Ideal para comenzar tu presencia online con un diseño limpio y profesional que muestra tu trabajo de forma clara y efectiva.</p>
+			<a href="./estandar/index.html" class="btn">Ver proyecto</a>
+		</div>
+
+		<div class="card">
+			<h2>Versión Intermedia</h2>
+			<p>Potenciá tu portfolio con animaciones, carrusel interactivo y una experiencia más dinámica que capta la atención de tus clientes.</p>
+			<a href="./intermedio/index.html" class="btn">Ver proyecto</a>
+		</div>
+
+		<div class="card">
+			<h2>Versión Premium</h2>
+			<p>Una experiencia completa y moderna con filtros, lightbox y diseño avanzado pensada para destacar tu marca y generar impacto profesional.</p>
+			<a href="./premium/index.html" class="btn">Ver proyecto</a>
+		</div>
+
+	</div>
+
+</body>
+</html>
